@@ -1,0 +1,29 @@
+#include "LevelObjectFactory.h"
+#include <algorithm>
+
+LevelObject* LevelObjectFactory::create(const std::string& type_name){
+    TypeInfo::iterator found;
+    cout<<"Requested a "<<type_name<<" instance..."<<endl;
+    found=types().find(type_name);
+    if(found!=types().end())
+        return found->second();
+    else
+        return 0;
+}
+bool LevelObjectFactory::registerType(const std::string& type_name,CreatorFuncPtr create){
+    cout<<"Type "<<type_name<<" registration..."<<endl;
+    TypeInfo::iterator found;
+    found=types().find(type_name);
+    if(found==types().end()){
+        types().insert(make_pair(type_name,create));
+        cout<<"Type "<<type_name<<" registered!"<<endl;
+        return true;
+    } else 
+        return false;
+}
+istream& operator>>(istream& is,LevelObject* &new_obj){
+      std::string type;
+      is>>type;
+      new_obj=LevelObjectFactory::create(type);
+      return is;
+}

@@ -1,0 +1,56 @@
+#if !defined(LEVEL_H)&&!defined(DOXYGEN)
+#include "Level.h"
+#else
+#pragma once
+#include <iostream>
+#include <string>
+
+class Level;
+class Field;
+/*!Класс "объект уровня".
+ */
+class LevelObject{
+  public:
+    /*!Получение имени класса данного экземпляра.*/
+    virtual std::string type_name()const=0; 
+
+    /*!Установка игрового уровня,которому принадлежит объект.
+     */
+    virtual void setLevel(Level *level);
+    
+    /*!Установка игрового поля, на котором находится объект.
+     */
+    virtual void setField(const Field *field);
+    
+    /*!Виртуальный деструктор.
+     */
+    virtual ~LevelObject();
+    
+    /*!Сохранение объекта: вывод его в поток.
+     */
+    std::ostream& printTo(std::ostream& os)const ;
+
+    /*!Оператор вывода в поток.
+     */
+    friend std::ostream& operator<<(std::ostream& os,const LevelObject& obj);
+    
+    /*!Получение поля, на котором находится объект.
+     */
+    const Field* field()const;
+    
+    /*!Получение уровня, которому принадлежит объект.
+     */
+    Level* level()const;
+  protected:
+    Level *level_;//!<<уровень, которому принадлежит объект 
+    const Field *field_;//!<поле, на котором находится объект
+
+    /*!Сохранение специфических свойств объектов-наследников в поток.
+     */
+    virtual std::ostream& overridedPrintTo(std::ostream& os)const;
+    
+    /*!Загрузка специфических свойств объектов-наследников из потока.
+     */
+    virtual std::istream& overridedInputFrom(std::istream& is);
+};  
+#endif

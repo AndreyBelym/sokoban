@@ -1,0 +1,71 @@
+#pragma once
+#include "LevelObjectFactory.h"
+#include "Registrator.h"
+
+//Класс "Ящик".
+class Box:public LevelObject{
+  public:
+
+    /*!
+     */
+    Box(){
+        std::cout<<creator.registeredCount()<<std::endl;
+    }
+
+    /*!
+     */
+    std::string type_name()const {
+        return static_typename();
+    }
+
+    /*!
+     */
+    static std::string static_typename(){
+        return "Box";
+    }
+
+    /*!
+     */
+    static LevelObject* instance(){
+        return new Box;
+    }
+
+    /*!
+     */
+    Registrator<static_typename,instance> creator;
+};
+
+//!Класс "Стена".
+class Wall:public LevelObject{
+  public:
+
+    /*!
+     */
+    Wall(){
+        std::cout<<creator.registeredCount()<<std::endl;        
+    }
+
+    /*!
+     */
+    std::string type_name()const{
+        return static_typename();
+    }
+
+    /*!
+     */
+    static std::string static_typename(){
+        return "Wall";
+    }
+    
+    /*!
+     */
+    static LevelObject* instance(){
+        return new Wall;
+    }
+
+    /*!
+     */
+    Registrator<static_typename,instance> creator;
+};
+
+#include "Keeper.h" 

@@ -1,0 +1,136 @@
+#ifndef LEVEL_H
+#define LEVEL_H
+#include <iostream>
+#include "../Core/DataStructures.h"
+#include "LevelObject.h"
+#include "Field.h"
+#include "Board.h"
+//! Класс "Игровой уровень"
+class Level{
+  protected:
+    int rows,//!<число строк
+        cols;//!<число столбцов
+    Board fields;//!<игровая доска(набор игровых полей)
+  public:
+    /*!Конструктор, задающий размер уровня.
+     */
+    Level(int rows=0,int cols=0);
+    
+    /*!Виртуальный деструктор.
+     */
+    virtual ~Level();
+
+    /*!Отключение от уровня объекта, 
+     * находящегося в указанных строке и столбце.
+     */
+    virtual LevelObject* detachObject(int row,int col);
+    
+    /*!Отключение от уровня объекта, заданного указателем на него.
+     */
+    LevelObject* detachObject(LevelObject *obj);
+    
+    /*!Подключение к уровню существующего объекта,
+     * заданного указателем на него, и размещение его
+     * в заданных строке и столбце.
+     */ 
+    virtual bool attachObject(LevelObject *obj,int row, int col);
+
+    /*!Создание и подключение к уровню нового объекта,
+     * и размещение его
+     * в заданных строке и столбце.
+     */ 
+    bool addObject(const std::string& type_name,int row,int col);
+
+    /*!Получение объекта,находящегося в заданных строке и столбце.
+     */
+    LevelObject* getObject(int row,int col);      
+
+    /*!Удаление объекта, 
+     * находящегося в указанных строке и столбце.
+     */
+    void deleteObject(int row, int col);
+
+    /*!Удаление объекта, заданного указателем на него. 
+     */
+    void deleteObject(LevelObject* obj);
+
+    /*!Очистка уровня: удаление всех объектов и обнуление размера уровня.
+     */
+    virtual void clear();
+    
+    /*!Установка размера уровня.
+     */
+    void setSize(int rows,int cols);
+    
+    /*!Замена объекта, находящегося в заданных строке и столбце,
+     * на объект, заданный указателем, с возможностью отключения или удаления
+     * старого объекта.
+     */
+    virtual LevelObject* replaceObject(LevelObject *obj,int row, int col,bool destroy=true);
+
+    /*!Замена объекта, находящегося в заданных строке и столбце,
+     * на новый создаваемый по имени заданного типа объект, 
+     * с возможностью отключения или удаления старого объекта.
+     */
+    LevelObject* replaceObject(const std::string& type_name,int row, int col,bool destroy=true);
+    
+    /*!Перемещение объекта, находящегося в заданных строке и столбце,
+     * в новое положение, также задаваемое строкой и столбцом.
+     */
+    bool moveObject(int row0,int col0,int row,int col);
+    
+    /*!Проверка меченых полей: проверка присутствия на каждом меченом поле
+     * объекта указанного типа.
+     */
+    bool check(const std::string& type_name);
+    
+    /*!Установка или снятие метки с указанного поля.
+     */
+    virtual bool setMarked(int row,int col,bool val=true);
+    
+    /*!Проверка, является ли указанное поле меченым.
+     */
+    bool isMarked(int row,int col);
+    
+    /*!Получение размера уровня.
+     */
+    void getSize(int &r,int& c);
+    
+    /*!Получение объекта, относящегося к заданному типу.
+     * Возвращается первый найденный объект.
+     */
+    LevelObject* getObject(const std::string& type_name);
+
+    /*!Сохранение уровня: вывод уровня в поток.
+     */      
+    virtual std::ostream& save(std::ostream&);
+    
+    /*!Загрузка уровня: ввод уровня из потока.
+     */
+    virtual std::istream& load(std::istream&);
+    
+    /*Оператор вывода уровня в поток.
+     */
+    friend std::ostream& operator<<(std::ostream& os,Level& lvl);
+    
+    /*Оператор ввода уровня из потока.
+     */
+    friend std::istream& operator>>(std::istream& is,Level& lvl);
+    
+    /*!Загрузка уровня из указанного файла.
+     */
+    void loadLevel(const char* filename);
+    
+    /*!Сохранение уровня в указанный файл.
+     */
+    void saveLevel(const char* filename);
+    
+    /*!Проверка допустимости координаты, задаваемой строком и столбцом.
+     */
+    bool isValid(int row,int col);
+    
+    /*!Проверка целостности уровня.
+     */
+    virtual bool validate();
+};
+#endif //LEVEL_H

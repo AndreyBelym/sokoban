@@ -1,0 +1,97 @@
+#if !defined(LEVEL_H)&&!defined(DOXYGEN)
+#include "Level.h"
+#else
+#pragma once
+
+//!Класс "Игровое поле"(клетка игровой доски).
+class Field{
+  protected:
+    mutable LevelObject *obj;//!<объект, находящийся на данном поле
+    bool marked_;//!<метка поля
+    int row_;//!<номер строка, в которой находится поле
+    int col_;//!<номер, в котором находится поле
+
+    /*!Установка номера строки, в которой находится поле.
+     */
+    void setRow(int row);
+    
+    /*!Установка номера столбца, в которой находится поле.
+     */
+    void setCol(int col);
+    
+    /*!Установка метки поля.
+     */
+    void setMarked(bool m);
+    
+    /*!Отключение и удаление объекта, находящегося на поле.
+     */
+    void deleteObject()const;
+
+    /*!Отключение объекта, находящегося на поле, от данного поля.
+     */
+    LevelObject* detachObject()const;
+    
+    /*!Замена объекта, находящегося на поле,
+     * на объект, заданный указателем, с возможностью отключения или удаления
+     * старого объекта
+     */
+    LevelObject* replaceObject(LevelObject *new_obj,bool destroy=true);
+    
+    /*!Замена объекта, находящегося на поле,
+     * на новый создаваемый по имени заданного типа объект, 
+     * с возможностью отключения или удаления старого объекта.
+     */
+    LevelObject* replaceObject(const std::string& type_name,bool destroy=true);
+    
+    /*!
+     */
+    bool attachObject(LevelObject* new_obj)const;
+    
+    /*!
+     */
+    bool addObject(const std::string& type_name)const;
+  public:
+    friend class Board;//!<
+    friend class Level;//!<
+    
+    /*!
+     */
+    Field();
+    
+    /*!
+     */
+    Field(const Field& other);
+    
+    /*!
+     */
+    void operator=(const Field& other);
+    
+    /*!
+     */
+    ~Field();
+
+    /*!
+     */
+    friend std::ostream& operator<<(std::ostream &os,const Field& f);
+    
+    /*!
+     */
+    friend std::istream& operator>>(std::istream& is,Field &f);
+    
+    /*!
+     */
+    LevelObject* object();
+    
+    /*!
+     */
+    bool marked()const;
+    
+    /*!
+     */
+    int row()const;
+    
+    /*!
+     */
+    int col()const;
+};
+#endif

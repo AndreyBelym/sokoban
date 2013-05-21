@@ -1,0 +1,18 @@
+struct NG:MenuElem{
+    NG(){text="New game";}
+    void SelectAction(GameLogic *l,GameEngine* e){
+        l->loadLevel("");
+        l->startGame();
+    }
+} NEW_GAME;
+
+struct SE:MenuElem{
+    SE(){text="Editor";}
+    void SelectAction(GameLogic *l,GameEngine* e){
+        l->startEditor();
+    }
+} START_EDITOR;
+struct SM:Menu{
+    SM(){subMenu[0]=&NEW_GAME;subMenu[1]=&START_EDITOR;subMenu[2]=0;}
+    void ExitAction(GameLogic *l,GameEngine* e){l->stop();};
+} START_MENU; 

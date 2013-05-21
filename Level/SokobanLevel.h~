@@ -1,0 +1,47 @@
+#pragma once
+#include "Level.h"
+#include "SokobanObjects.h"
+//!Класс "Уровень Сокобана".
+class SokobanLevel:public Level{
+  private:
+    int box_count,//!<количество объектов класса "Ящик"
+        mark_count,//!<количество меченых полей
+        keeper_count;//!<количество объектов класса "Кладовщик"
+  public:
+    /*Конструктор по умолчанию.
+     */
+    SokobanLevel(abrd);
+    
+    /*!Добавление на уровень существующего объекта,
+     * заданного указателем на него, и размещение его
+     * в заданных строке и столбце.
+     */
+    bool attachObject(LevelObject *obj,int row,int col);
+     
+    /*!Отключение от уровня объекта, 
+     * находящегося в указанных строке и столбце.
+     */
+    LevelObject* detachObject(int row,int col);    
+    
+    /*!Замена объекта, находящегося в заданных строке и столбце,
+     * на объект, заданный указателем, с возможностью отключения или удаления
+     * старого объекта.
+     */
+    LevelObject* replaceObject(LevelObject *obj,int row,int col,bool destroy=true);    
+    
+    /*!Установка или снятие метки с указанного поля.
+     */
+    bool setMarked(int row,int col,bool val=true);
+
+    /*!Загрузка уровня: ввод уровня из потока.
+     */
+    std::istream& load(std::istream& is);
+    
+    /*!Проверка целостности уровня.
+     */
+    bool validate();
+    
+    /*!Очистка уровня: удаление всех объектов и обнуление размера уровня.
+     */
+    void clear();
+};

@@ -1,0 +1,39 @@
+#pragma once
+#include "LevelObject.h"
+#include <map>
+#include <string>
+//!Класс "Фабрика объектов уровня".
+class LevelObjectFactory{
+  public:
+    /*!Тип указателя на функцию создания объекта.
+     */
+    typedef LevelObject* (*CreatorFuncPtr)();
+    
+    /*!Тип указателя на функцию получения имени класса.
+     */
+    typedef std::string (*TypeNameFuncPtr)();
+    
+    /*!Создание объекта указанного класса.
+     */
+    static LevelObject* create(const std::string& type_name);
+
+    /*!Регистрация класса на фабрике.
+     */
+    static bool registerType(const std::string& type_name,CreatorFuncPtr create);
+  private:
+
+    /*!Тип отображения имени класса на производящую функцию.
+     */
+    typedef std::map<std::string,CreatorFuncPtr> TypeInfo;
+    
+    /*!Получение отображения "имя класса"->"производящая функция".
+     */
+    static TypeInfo& types(){
+        static TypeInfo types_;
+        return types_;
+    }
+};
+/*!Оператор считывания потока объекта через указатель на базовый класс.
+ */
+std::istream& operator>>(std::istream& is,LevelObject* &new_obj);
+

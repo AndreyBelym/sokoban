@@ -1,0 +1,28 @@
+#pragma once
+#include "BoundedScreen.h"
+#include "../Level/Level.h"
+#include "Cursor.h"
+#include "Menu.h"
+#include "FileNameChooser.h"
+#include <cstdio>
+class Editor: public BoundedScreen{
+    private:
+    Level *level_;
+    public:
+    FilenameChooser<Editor> chooser;
+    Cursor cursor_,*cursor;
+    Menu *menu;
+    void SaveLevel(){
+        level_->saveLevel(chooser.filename.c_str());
+        logic_->setScreen(menu);
+    }
+    Editor():cursor(&cursor_){
+        type=EDITOR;
+        chooser.select.parent=this;
+        chooser.select.TSelectAction=&Editor::SaveLevel;
+        //chooser.logic_=
+    };
+    void setLevel(Level *l){level_=l;cursor_.level=l;}
+    Level *level(){return level_;}
+    int DispatchKey(const Keys &key);
+};

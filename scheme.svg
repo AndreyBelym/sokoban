@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg3716"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="scheme.svg">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.94"
+     inkscape:cx="376.56588"
+     inkscape:cy="948.01781"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1302"
+     inkscape:window-height="746"
+     inkscape:window-x="56"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,135.61518,1225.0674)"
+       id="node1"
+       class="node"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4335">Node1</title>
+      <polygon
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000"
+         points="152,-830 256,-830 256,-728 152,-728 152,-728 "
+         id="polygon4337" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="204"
+         y="-817"
+         font-size="10.00"
+         id="text4339">Box</text>
+      <polyline
+         style="fill:none;stroke:#000000"
+         points="152,-809 256,-809 "
+         id="polyline4341" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="204"
+         y="-796"
+         font-size="10.00"
+         id="text4343" />
+      <polyline
+         style="fill:none;stroke:#000000"
+         points="152,-788 256,-788 "
+         id="polyline4345" />
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-775"
+         font-size="10.00"
+         id="text4347">+ Box()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-762"
+         font-size="10.00"
+         id="text4349">+ type_name()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-749"
+         font-size="10.00"
+         id="text4351">+ static_typename()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-736"
+         font-size="10.00"
+         id="text4353">+ instance()</text>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,135.61518,1225.0674)"
+       id="node2"
+       class="node"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4356">Node2</title>
+      <a
+         id="a4358"
+         xlink:title="Класс &quot;Объект игрового уровня&quot;."
+         xlink:href="C:\Users\Shindows7\Dropbox\Public\ООП\Project\rtf\$class_level_object.html">
+        <polygon
+           style="fill:#ffffff;stroke:#000000"
+           points="16.5,-1145.5 131.5,-1145.5 131.5,-978.5 16.5,-978.5 16.5,-978.5 "
+           id="polygon4360" />
+        <text
+           style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+           x="74"
+           y="-1132.5"
+           font-size="10.00"
+           id="text4362">LevelObject</text>
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="16.5,-1124.5 131.5,-1124.5 "
+           id="polyline4364" />
+        <text
+           style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+           x="74"
+           y="-1111.5"
+           font-size="10.00"
+           id="text4366" />
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="16.5,-1103.5 131.5,-1103.5 "
+           id="polyline4368" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="24.5"
+           y="-1090.5"
+           font-size="10.00"
+           id="text4370">+ type_name()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="24.5"
+           y="-1077.5"
+           font-size="10.00"
+           id="text4372">+ setLevel()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="24.5"
+           y="-1064.5"
+           font-size="10.00"
+           id="text4374">+ setField()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="24.5"
+           y="-1051.5"
+           font-size="10.00"
+           id="text4376">+ ~LevelObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="24.5"
+           y="-1038.5"
+           font-size="10.00"
+           id="text4378">+ printTo()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="24.5"
+           y="-1025.5"
+           font-size="10.00"
+           id="text4380">+ field()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="24.5"
+           y="-1012.5"
+           font-size="10.00"
+           id="text4382">+ level()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="24.5"
+           y="-999.5"
+           font-size="10.00"
+           id="text4384"># overridedPrintTo()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="24.5"
+           y="-986.5"
+           font-size="10.00"
+           id="text4386"># overridedInputFrom()</text>
+      </a>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,121.77642,1225.8815)"
+       id="edge2"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4389">Node2-&gt;Node1</title>
+      <path
+         style="fill:none;stroke:#191970"
+         inkscape:connector-curvature="0"
+         d="m 130.296,-969.405 c 1.622,3.153 3.195,6.294 4.704,9.405 10.69042,17.53859 48.4169,88.06666 52.129,129.676"
+         id="path4391"
+         sodipodi:nodetypes="ccc" />
+      <polygon
+         style="fill:none;stroke:#191970"
+         points="127.169,-967.832 125.609,-978.311 133.364,-971.093 127.169,-967.832 "
+         id="polygon4393" />
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,135.61518,1225.0674)"
+       id="node4"
+       class="node"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4396">Node3</title>
+      <a
+         id="a4398"
+         xlink:title="Класс &quot;Игровое поле&quot;(клетка игровой доски)."
+         xlink:href="C:\Users\Shindows7\Dropbox\Public\ООП\Project\rtf\$class_field.html">
+        <polygon
+           style="fill:#ffffff;stroke:#000000"
+           points="-0.5,-927.5 90.5,-927.5 90.5,-630.5 -0.5,-630.5 -0.5,-630.5 "
+           id="polygon4400" />
+        <text
+           style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+           x="45"
+           y="-914.5"
+           font-size="10.00"
+           id="text4402">Field</text>
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="-0.5,-906.5 90.5,-906.5 "
+           id="polyline4404" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-893.5"
+           font-size="10.00"
+           id="text4406"># marked_</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-880.5"
+           font-size="10.00"
+           id="text4408"># row_</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-867.5"
+           font-size="10.00"
+           id="text4410"># col_</text>
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="-0.5,-859.5 90.5,-859.5 "
+           id="polyline4412" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-846.5"
+           font-size="10.00"
+           id="text4414">+ Field()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-833.5"
+           font-size="10.00"
+           id="text4416">+ Field()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-820.5"
+           font-size="10.00"
+           id="text4418">+ operator=()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-807.5"
+           font-size="10.00"
+           id="text4420">+ ~Field()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-794.5"
+           font-size="10.00"
+           id="text4422">+ object()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-781.5"
+           font-size="10.00"
+           id="text4424">+ marked()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-768.5"
+           font-size="10.00"
+           id="text4426">+ row()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-755.5"
+           font-size="10.00"
+           id="text4428">+ col()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-742.5"
+           font-size="10.00"
+           id="text4430"># setRow()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-729.5"
+           font-size="10.00"
+           id="text4432"># setCol()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-716.5"
+           font-size="10.00"
+           id="text4434"># setMarked()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-703.5"
+           font-size="10.00"
+           id="text4436"># deleteObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-690.5"
+           font-size="10.00"
+           id="text4438"># detachObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-677.5"
+           font-size="10.00"
+           id="text4440"># replaceObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-664.5"
+           font-size="10.00"
+           id="text4442"># replaceObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-651.5"
+           font-size="10.00"
+           id="text4444"># attachObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-638.5"
+           font-size="10.00"
+           id="text4446"># addObject()</text>
+      </a>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,135.61518,1225.0674)"
+       id="edge6"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4449">Node2-&gt;Node3</title>
+      <path
+         style="fill:none;stroke:#404040"
+         inkscape:connector-curvature="0"
+         d="m 41.061,-978.302 c -1.6141,6.13 -3.0012,12.272 -4.061,18.302 -1.1716,6.665 -2.0897,13.489 -2.7887,20.397"
+         id="path4451" />
+      <polygon
+         style="fill:none;stroke:#404040"
+         points="29.7182,-933.817 33.2091,-927.507 37.6909,-933.156 34.2,-939.466 34.2,-939.466 "
+         id="polygon4453" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="48"
+         y="-950.5"
+         font-size="10.00"
+         id="text4455">#obj</text>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,135.61518,1225.0674)"
+       id="edge4"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4458">Node3-&gt;Node2</title>
+      <path
+         style="fill:none;stroke:#404040"
+         inkscape:connector-curvature="0"
+         d="m 60.2214,-927.54 c 1.3368,-13.045 2.6654,-26.011 3.9402,-38.451"
+         id="path4460" />
+      <polygon
+         style="fill:none;stroke:#404040"
+         points="68.7842,-971.863 65.4168,-978.239 60.8259,-972.678 64.1934,-966.302 64.1934,-966.302 "
+         id="polygon4462" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="79"
+         y="-950.5"
+         font-size="10.00"
+         id="text4464">#field_</text>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,135.61518,1225.0674)"
+       id="node11"
+       class="node"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4467">Node6</title>
+      <a
+         id="a4469"
+         xlink:title="{Table\&lt; Field \&gt;\n|# rows_\l# cols_\l|+ Table()\l+ Table()\l+ rows()\l+ cols()\l+ setRows()\l+ setCols()\l+ setSize()\l+ at()\l+ operator()()\l+ clear()\l}"
+         xlink:href="C:\Users\Shindows7\Dropbox\Public\ООП\Project\rtf\$class_table.html">
+        <polygon
+           style="fill:#ffffff;stroke:#000000"
+           points="5,-579.5 85,-579.5 85,-386.5 5,-386.5 5,-386.5 "
+           id="polygon4471" />
+        <text
+           style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+           x="45"
+           y="-566.5"
+           font-size="10.00"
+           id="text4473">Table&lt; Field &gt;</text>
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="5,-558.5 85,-558.5 "
+           id="polyline4475" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="13"
+           y="-545.5"
+           font-size="10.00"
+           id="text4477"># rows_</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="13"
+           y="-532.5"
+           font-size="10.00"
+           id="text4479"># cols_</text>
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="5,-524.5 85,-524.5 "
+           id="polyline4481" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="13"
+           y="-511.5"
+           font-size="10.00"
+           id="text4483">+ Table()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="13"
+           y="-498.5"
+           font-size="10.00"
+           id="text4485">+ Table()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="13"
+           y="-485.5"
+           font-size="10.00"
+           id="text4487">+ rows()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="13"
+           y="-472.5"
+           font-size="10.00"
+           id="text4489">+ cols()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="13"
+           y="-459.5"
+           font-size="10.00"
+           id="text4491">+ setRows()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="13"
+           y="-446.5"
+           font-size="10.00"
+           id="text4493">+ setCols()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="13"
+           y="-433.5"
+           font-size="10.00"
+           id="text4495">+ setSize()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="13"
+           y="-420.5"
+           font-size="10.00"
+           id="text4497">+ at()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="13"
+           y="-407.5"
+           font-size="10.00"
+           id="text4499">+ operator()()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="13"
+           y="-394.5"
+           font-size="10.00"
+           id="text4501">+ clear()</text>
+      </a>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,135.61518,1225.0674)"
+       id="edge14"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4504">Node3-&gt;Node6</title>
+      <path
+         style="fill:none;stroke:#404040"
+         inkscape:connector-curvature="0"
+         d="m 45,-630.133 c 0,12.849 0,25.689 0,38.133"
+         id="path4506" />
+      <polygon
+         style="fill:none;stroke:#404040"
+         points="41,-585.702 45,-579.702 49,-585.702 45.0001,-591.702 45.0001,-591.702 "
+         id="polygon4508" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="59"
+         y="-602.5"
+         font-size="10.00"
+         id="text4510">#data</text>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,190.87442,780.69116)"
+       id="node7"
+       class="node"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4513">Node4</title>
+      <a
+         id="a4515"
+         xlink:title="Класс &quot;Игровой уровень&quot;."
+         xlink:href="C:\Users\Shindows7\Dropbox\Public\ООП\Project\rtf\$class_level.html">
+        <polygon
+           style="fill:#ffffff;stroke:#000000"
+           points="48.5,-1 48.5,-1 48.5,-207 137.5,-207 137.5,-1 "
+           id="polygon4517" />
+        <text
+           style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+           x="93"
+           y="-194"
+           font-size="10.00"
+           id="text4519">Level</text>
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="48.5,-186 137.5,-186 "
+           id="polyline4521" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-173"
+           font-size="10.00"
+           id="text4523"># rows</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-160"
+           font-size="10.00"
+           id="text4525"># cols</text>
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="48.5,-152 137.5,-152 "
+           id="polyline4527" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-139"
+           font-size="10.00"
+           id="text4529">+ Level()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-126"
+           font-size="10.00"
+           id="text4531">+ ~Level()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-113"
+           font-size="10.00"
+           id="text4533">+ detachObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-100"
+           font-size="10.00"
+           id="text4535">+ detachObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-87"
+           font-size="10.00"
+           id="text4537">+ attachObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-74"
+           font-size="10.00"
+           id="text4539">+ addObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-61"
+           font-size="10.00"
+           id="text4541">+ getObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-48"
+           font-size="10.00"
+           id="text4543">+ deleteObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-35"
+           font-size="10.00"
+           id="text4545">+ deleteObject()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-22"
+           font-size="10.00"
+           id="text4547">+ clear()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="56.5"
+           y="-9"
+           font-size="10.00"
+           id="text4549">and 15 more...</text>
+      </a>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,135.61518,1225.0674)"
+       id="edge8"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4552">Node4-&gt;Node2</title>
+      <path
+         style="fill:none;stroke:#404040"
+         inkscape:connector-curvature="0"
+         d="m 133.03586,-671.89911 c 0,-475.99999 0,-25.25704 0,-25.25704 0,-63.104 -23.54886,-214.91085 -35.17876,-269.48585"
+         id="path4554"
+         sodipodi:nodetypes="ccc" />
+      <polygon
+         style="fill:none;stroke:#404040"
+         points="100.484,-973.385 95.2997,-978.398 92.6666,-971.684 97.8507,-966.672 97.8507,-966.672 "
+         id="polygon4556" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="132.28297"
+         y="-872.86908"
+         font-size="10.00"
+         id="text4558">#level_</text>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,135.61518,1225.0674)"
+       id="node9"
+       class="node"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4561">Node5</title>
+      <a
+         id="a4563"
+         xlink:title="Класс &quot;Игровая доска&quot;(набор игровых полей)."
+         xlink:href="C:\Users\Shindows7\Dropbox\Public\ООП\Project\rtf\$class_board.html">
+        <polygon
+           style="fill:#ffffff;stroke:#000000"
+           points="19.5,-347.5 90.5,-347.5 90.5,-258.5 19.5,-258.5 19.5,-258.5 "
+           id="polygon4565" />
+        <text
+           style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+           x="55"
+           y="-334.5"
+           font-size="10.00"
+           id="text4567">Board</text>
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="19.5,-326.5 90.5,-326.5 "
+           id="polyline4569" />
+        <text
+           style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+           x="55"
+           y="-313.5"
+           font-size="10.00"
+           id="text4571" />
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="19.5,-305.5 90.5,-305.5 "
+           id="polyline4573" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="27.5"
+           y="-292.5"
+           font-size="10.00"
+           id="text4575">+ setRows()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="27.5"
+           y="-279.5"
+           font-size="10.00"
+           id="text4577">+ setCols()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="27.5"
+           y="-266.5"
+           font-size="10.00"
+           id="text4579">+ setSize()</text>
+      </a>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,164.92081,1050.8619)"
+       id="edge10"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4582">Node5-&gt;Node4</title>
+      <path
+         style="fill:none;stroke:#404040"
+         inkscape:connector-curvature="0"
+         d="M 90.608585,-271.58045 C 83.87249,-244.53862 62.38697,-200.30417 40.98015,-166.48901"
+         id="path4584"
+         sodipodi:nodetypes="cc" />
+      <polygon
+         style="fill:none;stroke:#404040"
+         points="71.0713,-218.837 71.0713,-218.837 68.2677,-212.193 73.3222,-207.05 76.1257,-213.694 "
+         id="polygon4586"
+         transform="matrix(0.91135635,0.41161828,-0.41161828,0.91135635,-61.392489,-112.38363)" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="102.8502"
+         y="-250.35918"
+         font-size="10.00"
+         id="text4588">#fields</text>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,135.61518,1225.0674)"
+       id="edge12"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4591">Node6-&gt;Node5</title>
+      <path
+         style="fill:none;stroke:#191970"
+         inkscape:connector-curvature="0"
+         d="m 50.9257,-376.337 c 0.5556,10.001 1.0954,19.718 1.5907,28.632"
+         id="path4593" />
+      <polygon
+         style="fill:none;stroke:#191970"
+         points="47.4261,-376.235 47.4261,-376.235 50.3659,-386.413 54.4153,-376.623 "
+         id="polygon4595" />
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,257.04555,1229.0679)"
+       id="node14"
+       class="node"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4598">Node7</title>
+      <a
+         id="a4600"
+         xlink:title="{Registrator\&lt; static\l_typename, instance \&gt;\n|- reg\l|+ Registrator()\l+ Registrator()\l+ ~Registrator()\l+ registeredCount()\l}"
+         xlink:href="C:\Users\Shindows7\Dropbox\Public\ООП\Project\rtf\$class_registrator.html">
+        <polygon
+           style="fill:#ffffff;stroke:#000000"
+           points="149,-1004.5 149,-1004.5 149,-1119.5 265,-1119.5 265,-1004.5 "
+           id="polygon4602" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="157"
+           y="-1106.5"
+           font-size="10.00"
+           id="text4604">Registrator&lt; static</text>
+        <text
+           style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+           x="207"
+           y="-1093.5"
+           font-size="10.00"
+           id="text4606">_typename, instance &gt;</text>
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="149,-1085.5 265,-1085.5 "
+           id="polyline4608" />
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="149,-1064.5 265,-1064.5 "
+           id="polyline4612" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="157"
+           y="-1051.5"
+           font-size="10.00"
+           id="text4614">+ Registrator()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="157"
+           y="-1038.5"
+           font-size="10.00"
+           id="text4616">+ Registrator()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="157"
+           y="-1025.5"
+           font-size="10.00"
+           id="text4618">+ ~Registrator()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="157"
+           y="-1012.5"
+           font-size="10.00"
+           id="text4620">+ registeredCount()</text>
+      </a>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,135.61518,1225.0674)"
+       id="edge16"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4623">Node7-&gt;Node1</title>
+      <path
+         style="fill:none;stroke:#404040"
+         inkscape:connector-curvature="0"
+         d="M 296.60176,-1000.5602 C 250.14632,-968.0483 205.189,-891.121 204.674,-842.594"
+         id="path4625"
+         sodipodi:nodetypes="cc" />
+      <polygon
+         style="fill:none;stroke:#404040"
+         points="208.608,-836.306 204.672,-842.348 204.672,-842.348 200.608,-836.391 204.544,-830.349 "
+         id="polygon4627"
+         transform="matrix(0.99946299,0.03276783,-0.03276783,0.99946299,-27.508211,-7.2600692)" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="227.75533"
+         y="-849.22339"
+         font-size="10.00"
+         id="text4629">-creator</text>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,260.42214,1711.9473)"
+       id="node1-9"
+       class="node"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title3281">Node1</title>
+      <polygon
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000"
+         points="-0.5,-721 -0.5,-901 92.5,-901 92.5,-721 -0.5,-721 "
+         id="polygon3283" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="46"
+         y="-888"
+         font-size="10.00"
+         id="text3285">SokobanLevel</text>
+      <polyline
+         style="fill:none;stroke:#000000"
+         points="-0.5,-880 92.5,-880 "
+         id="polyline3287" />
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="7.5"
+         y="-867"
+         font-size="10.00"
+         id="text3289">- box_count</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="7.5"
+         y="-854"
+         font-size="10.00"
+         id="text3291">- mark_count</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="7.5"
+         y="-841"
+         font-size="10.00"
+         id="text3293">- keeper_count</text>
+      <polyline
+         style="fill:none;stroke:#000000"
+         points="-0.5,-833 92.5,-833 "
+         id="polyline3295" />
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="7.5"
+         y="-820"
+         font-size="10.00"
+         id="text3297">+ SokobanLevel()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="7.5"
+         y="-807"
+         font-size="10.00"
+         id="text3299">+ attachObject()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="7.5"
+         y="-794"
+         font-size="10.00"
+         id="text3301">+ detachObject()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="7.5"
+         y="-781"
+         font-size="10.00"
+         id="text3303">+ replaceObject()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="7.5"
+         y="-768"
+         font-size="10.00"
+         id="text3305">+ setMarked()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="7.5"
+         y="-755"
+         font-size="10.00"
+         id="text3307">+ load()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="7.5"
+         y="-742"
+         font-size="10.00"
+         id="text3309">+ validate()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="7.5"
+         y="-729"
+         font-size="10.00"
+         id="text3311">+ clear()</text>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,201.81085,1707.8769)"
+       id="edge2-4"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title3353">Node2-&gt;Node1</title>
+      <path
+         style="fill:none;stroke:#191970;stroke-width:1"
+         inkscape:connector-curvature="0"
+         d="m 106.55126,-959.28112 c 0.002,20.36993 0.005,41.53421 0.007,61.59082"
+         id="path3355" />
+      <polygon
+         style="fill:none;stroke:#191970"
+         points="122.46,-965.815 121.169,-955.299 114.893,-958.399 114.893,-958.399 "
+         id="polygon3357"
+         transform="matrix(0.89656195,-0.44291836,0.44291836,0.89656195,424.53455,-49.375937)" />
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,257.61428,952.06593)"
+       id="edge16-8"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title4623-2">Node7-&gt;Node1</title>
+      <path
+         style="fill:none;stroke:#404040;stroke-width:0.55853057"
+         inkscape:connector-curvature="0"
+         d="m 204.70766,-882.75543 c 0.0151,11.67221 0.0371,28.14171 0.0519,40.19832"
+         id="path4625-4" />
+      <polygon
+         style="fill:none;stroke:#404040"
+         points="200.608,-836.391 204.544,-830.349 208.608,-836.306 204.672,-842.348 204.672,-842.348 "
+         id="polygon4627-5" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="216.6915"
+         y="-859.01062"
+         font-size="10.00"
+         id="text4629-5">-reg</text>
+    </g>
+    <g
+       id="graph1-1"
+       class="graph"
+       transform="matrix(0.95650342,0,0,0.95650342,510.93616,271.42488)"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title6901">NestedRegistrator&lt; type_name, creator &gt;</title>
+      <polygon
+         style="fill:#ffffff;stroke:#ffffff"
+         points="-4,5 -4,-94 117,-94 117,5 -4,5 "
+         id="polygon6903"
+         transform="translate(-113.19149,-177.44681)" />
+      <!-- Node1 -->
+      <g
+         id="node1-7"
+         class="node"
+         transform="translate(-117.02128,-171.91489)">
+        <title
+           id="title6906">Node1</title>
+        <polygon
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000"
+           points="112.5,-0.5 -0.5,-0.5 -0.5,-0.5 -0.5,-89.5 112.5,-89.5 "
+           id="polygon6908"
+           transform="matrix(1.1049912,0,0,0.99942826,0.07793816,-0.02572842)" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-76.5"
+           font-size="10.00"
+           id="text6910">NestedRegistrator&lt;static</text>
+        <text
+           style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+           x="56"
+           y="-63.5"
+           font-size="10.00"
+           id="text6912">_typename, instance &gt;</text>
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="-0.5,-55.5 112.5,-55.5 "
+           id="polyline6914"
+           transform="matrix(1.1007944,0,0,1,0.10019245,0)" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-42.5"
+           font-size="10.00"
+           id="text6916">+ registered</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-29.5"
+           font-size="10.00"
+           id="text6918">+ count</text>
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="-0.5,-21.5 112.5,-21.5 "
+           id="polyline6920"
+           transform="matrix(1.0970595,0,0,1,0.09658493,0)" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-8.5"
+           font-size="10.00"
+           id="text6922">+ NestedRegistrator()</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,258.82582,1261.8286)"
+       id="node1-1"
+       class="node"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title7314">Node1</title>
+      <polygon
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000"
+         points="256,-869 256,-689 152,-689 152,-689 152,-869 "
+         id="polygon7316" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="204"
+         y="-856"
+         font-size="10.00"
+         id="text7318">Keeper</text>
+      <polyline
+         style="fill:none;stroke:#000000"
+         points="152,-848 256,-848 "
+         id="polyline7320" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="204"
+         y="-835"
+         font-size="10.00"
+         id="text7322" />
+      <polyline
+         style="fill:none;stroke:#000000"
+         points="152,-827 256,-827 "
+         id="polyline7324" />
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-814"
+         font-size="10.00"
+         id="text7326">+ Keeper()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-801"
+         font-size="10.00"
+         id="text7328">+ ~Keeper()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-788"
+         font-size="10.00"
+         id="text7330">+ type_name()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-775"
+         font-size="10.00"
+         id="text7332">+ moveLeft()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-762"
+         font-size="10.00"
+         id="text7334">+ moveRight()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-749"
+         font-size="10.00"
+         id="text7336">+ moveUp()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-736"
+         font-size="10.00"
+         id="text7338">+ moveDown()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-723"
+         font-size="10.00"
+         id="text7340">+ instance()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-710"
+         font-size="10.00"
+         id="text7342">+ static_typename()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-697"
+         font-size="10.00"
+         id="text7344">- move()</text>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,258.82582,1261.8286)"
+       id="edge2-1"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title7380">Node2-&gt;Node1</title>
+      <path
+         style="fill:none;stroke:#191970"
+         inkscape:connector-curvature="0"
+         d="m 4.3385527,-1008.7667 c 6.3028503,6.3445 0.00351,-0.089 6.1933623,6.2135 49.649091,52.10514 98.084505,87.72679 162.638085,133.4012"
+         id="path7382"
+         sodipodi:nodetypes="ccc" />
+      <polygon
+         style="fill:none;stroke:#191970"
+         points="127.169,-967.832 125.609,-978.311 133.364,-971.093 127.169,-967.832 "
+         id="polygon7384"
+         transform="matrix(0.96641673,-0.25697994,0.25697994,0.96641673,127.62502,-38.143201)" />
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,258.82582,1261.8286)"
+       id="edge16-5"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title7614">Node7-&gt;Node1</title>
+      <path
+         style="fill:none;stroke:#404040"
+         inkscape:connector-curvature="0"
+         d="m 206.26893,-1038.5785 c -1.76004,157.84969 0.0498,1.3716 -1.18493,157.3335"
+         id="path7616"
+         sodipodi:nodetypes="cc" />
+      <polygon
+         style="fill:none;stroke:#404040"
+         points="209.019,-875.087 205.083,-881.129 205.083,-881.129 201.019,-875.172 204.955,-869.13 "
+         id="polygon7618"
+         transform="matrix(0.99996782,0.00802249,-0.00802249,0.99996782,-7.0141153,-1.6729257)" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="185.20213"
+         y="-907.5213"
+         font-size="10.00"
+         id="text7620">-creator</text>
+    </g>
+    <g
+       id="graph1"
+       class="graph"
+       transform="matrix(0.95650342,0,0,0.95650342,462.67671,837.35797)"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title6659">LevelObjectFactory</title>
+      <polygon
+         style="fill:#ffffff;stroke:#ffffff"
+         points="-4,-94 105,-94 105,5 -4,5 -4,5 "
+         id="polygon6661" />
+      <!-- Node1 -->
+      <g
+         id="node1-8"
+         class="node">
+        <title
+           id="title6664">Node1</title>
+        <polygon
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000"
+           points="-0.5,-89.5 100.5,-89.5 100.5,-0.5 -0.5,-0.5 -0.5,-0.5 "
+           id="polygon6666" />
+        <text
+           style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+           x="50"
+           y="-76.5"
+           font-size="10.00"
+           id="text6668">LevelObjectFactory</text>
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="-0.5,-68.5 100.5,-68.5 "
+           id="polyline6670" />
+        <text
+           style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+           x="50"
+           y="-55.5"
+           font-size="10.00"
+           id="text6672" />
+        <polyline
+           style="fill:none;stroke:#000000"
+           points="-0.5,-47.5 100.5,-47.5 "
+           id="polyline6674" />
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-34.5"
+           font-size="10.00"
+           id="text6676">+ create()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-21.5"
+           font-size="10.00"
+           id="text6678">+ registerType()</text>
+        <text
+           style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+           x="7.5"
+           y="-8.5"
+           font-size="10.00"
+           id="text6680">- types()</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,378.26561,1224.3279)"
+       id="node1-2"
+       class="node"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title8339">Node1</title>
+      <polygon
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000"
+         points="256,-830 256,-728 152,-728 152,-728 152,-830 "
+         id="polygon8341" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="204"
+         y="-817"
+         font-size="10.00"
+         id="text8343">Wall</text>
+      <polyline
+         style="fill:none;stroke:#000000"
+         points="152,-809 256,-809 "
+         id="polyline8345" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="204"
+         y="-796"
+         font-size="10.00"
+         id="text8347" />
+      <polyline
+         style="fill:none;stroke:#000000"
+         points="152,-788 256,-788 "
+         id="polyline8349" />
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-775"
+         font-size="10.00"
+         id="text8351">+ Wall()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-762"
+         font-size="10.00"
+         id="text8353">+ type_name()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-749"
+         font-size="10.00"
+         id="text8355">+ static_typename()</text>
+      <text
+         style="font-size:10px;text-anchor:start;font-family:'Helvetica,sans-Serif'"
+         x="160"
+         y="-736"
+         font-size="10.00"
+         id="text8357">+ instance()</text>
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,378.26561,1224.3279)"
+       id="edge2-7"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title8393">Node2-&gt;Node1</title>
+      <path
+         style="fill:none;stroke:#191970"
+         inkscape:connector-curvature="0"
+         d="m -111.49167,-987.4617 c 8.24173,2.85211 0.10341,0.0784 6.12586,1.98584 81.471065,27.19386 210.81964,84.31431 292.49481,155.15186"
+         id="path8395"
+         sodipodi:nodetypes="ccc" />
+      <polygon
+         style="fill:none;stroke:#191970"
+         points="127.169,-967.832 125.609,-978.311 133.364,-971.093 127.169,-967.832 "
+         id="polygon8397"
+         transform="matrix(0.68664972,-0.72698842,0.72698842,0.68664972,503.95927,-226.875)" />
+    </g>
+    <g
+       transform="matrix(0.95650342,0,0,0.95650342,378.26561,1224.3279)"
+       id="edge16-6"
+       class="edge"
+       inkscape:export-filename="C:\Users\Shindows7\Dropbox\Public\ООП\Project\node1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <title
+         id="title8627">Node7-&gt;Node1</title>
+      <path
+         style="fill:none;stroke:#404040"
+         inkscape:connector-curvature="0"
+         d="m 122.13368,-999.70915 c 39.502,38.04383 83.05532,108.58815 82.54032,157.11515"
+         id="path8629"
+         sodipodi:nodetypes="cc" />
+      <polygon
+         style="fill:none;stroke:#404040"
+         points="204.544,-830.349 208.608,-836.306 204.672,-842.348 204.672,-842.348 200.608,-836.391 "
+         id="polygon8631" />
+      <text
+         style="font-size:10px;text-anchor:middle;font-family:'Helvetica,sans-Serif'"
+         x="224.14894"
+         y="-855.18085"
+         font-size="10.00"
+         id="text8633">+creator</text>
+    </g>
+  </g>
+</svg>

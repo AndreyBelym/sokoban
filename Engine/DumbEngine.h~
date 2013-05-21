@@ -1,0 +1,12 @@
+#pragma once
+#include "../Engine/GameEngine.h"
+class DumbEngine:public BaseGameEngine{
+   public:
+    virtual Keys getKey();
+    virtual void showMenu(Menu* m);
+    virtual void showLevelScreen(LevelScreen *l);
+    virtual void showEditor(Editor *l);
+    virtual void showSizeEditor();
+    virtual void showWin();
+    virtual void showLose();
+} ; 

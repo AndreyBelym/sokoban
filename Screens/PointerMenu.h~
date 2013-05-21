@@ -1,0 +1,24 @@
+#pragma once
+#include "Menu.h"
+template <typename T>
+struct PointerMenuElem: public MenuElem{
+    //template <typename T>
+
+    void (T::*TSelectAction)();
+    void SelectAction(GameLogic *l){
+        (static_cast<T*>(l)->*TSelectAction)();
+    }
+};
+
+template <typename T>
+struct PointerMenu: public Menu{
+    void (T::*TExitAction)();
+    void ExitAction(){
+        (static_cast<T*>(logic_)->*TExitAction)();
+    }
+};
+
+template <typename T>
+struct TypedMenu:public Menu{
+    PointerMenuElem<T> subMenu[80];
+};

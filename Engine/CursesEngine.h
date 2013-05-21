@@ -1,0 +1,22 @@
+#pragma once
+#include "../Engine/BaseGameEngine.h"
+#include <curses.h>
+class CursesEngine:public BaseGameEngine{
+  private:
+     int term_rows,term_cols; 
+     static const int MENU_ELEM_W=15;
+  public:
+    CursesEngine();   
+    ~CursesEngine();
+    void Init();
+    void Stop();
+    Keys getKey();
+    void showMenu(Menu* m);
+    void showLevelScreen(LevelScreen *l);
+    void showLevel(Level *l);
+    void showEditor(Editor *l);
+    void showSizeEditor();
+    void showWin(WinScreen *w);
+    void showLose();
+    char getRawInput();
+} ; 

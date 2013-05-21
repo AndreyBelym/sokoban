@@ -1,0 +1,17 @@
+#pragma once
+#include "../Screens/Screen.h"
+#include "../Engine/GameEngine.h"
+class GameLogic{
+  public:
+    GameLogic();
+    ~GameLogic();
+    void Main();
+    void setEngine(GameEngine *e);
+    void setScreen(Screen *s);
+    void showScreen();
+    void stop();
+  protected:
+    GameEngine* eng_;
+    Screen* screen_;
+    bool running_;
+};

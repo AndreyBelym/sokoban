@@ -1,0 +1,5 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Exec=xterm -e /home/wolf2105/Dropbox/Public/ООП/Project/sokoban
+

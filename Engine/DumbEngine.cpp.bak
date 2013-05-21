@@ -1,0 +1,116 @@
+#include "DumbEngine.h"
+#include <cstdio>
+void DumbEngine::showMenu(Menu* m){
+    for(MenuElem **ptr=m->subMenu;*ptr;ptr++){
+        if(ptr-m->subMenu==m->current)
+            printf("||%s||\n",(*ptr)->text.c_str());
+        else
+            printf("%s\n",(*ptr)->text.c_str());
+    }
+};
+void DumbEngine::showLevelScreen(LevelScreen *ls){
+    int m,n;
+    Level *level=ls->level;
+    level->getSize(n,m);
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            LevelObject *o=level->getObjectAt(i,j);
+            if(o)
+                switch(o->type_name()){
+                    case LevelObjects::TypeKeeper :
+                        putchar('@');
+                    break;
+                    case LevelObjects::TypeBox :
+                        putchar('o');
+                    break;
+            case LevelObjects::TypeWall:
+            putchar('#');
+            break;
+                    default:
+                        putchar('.');
+                }
+            else if (level->isMarked(i,j))
+                putchar('x');
+            else putchar('.');
+        }
+        putchar('\n');
+    }
+};
+Keys DumbEngine::getKey(){
+    a: switch(getchar()){
+        case 'a':
+            return MOVE_LEFT;
+            break;
+        case 'w':
+            return MOVE_UP;
+            break;
+        case 's':
+            return MOVE_DOWN;
+            break;
+        case 'd':
+            return MOVE_RIGHT;
+            break;
+        case '1':
+            return OPTION_1;
+            break;
+        case '2':
+            return OPTION_2;
+            break;
+        case '3':
+            return OPTION_3;
+            break;
+        case '4':
+            return OPTION_4;
+            break;
+        case 'X':
+            return CONTROL_DELETE;
+            break;
+        case 'Z':
+            return CONTROL_SAVE;
+            break;
+        case 'C':
+            return CONTROL_CANCEL;
+            break;
+        default:
+            goto a;
+            return KEY_NONE;
+    }
+
+};
+
+void DumbEngine::showEditor(Editor *e){
+    int m,n;
+    Level *level=e->level;
+    Cursor *c=e->cursor;
+    level->getSize(n,m);
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            if(j==c->x&&i==c->y){
+                putchar('V');
+                continue;
+            }
+            LevelObject *o=level->getObjectAt(i,j);
+            if(o)
+                switch(o->type_name()){
+                    case LevelObjects::TypeKeeper :
+                        putchar('@');
+                    break;
+                    case LevelObjects::TypeBox :
+                        putchar('o');
+                    break;
+            case LevelObjects::TypeWall:
+            putchar('#');
+            break;
+                    default:
+                        putchar('.');
+                }
+            else if (level->isMarked(i,j))
+                putchar('x');
+            else putchar('.');
+        }
+        putchar('\n');
+    }
+};
+void DumbEngine::showSizeEditor(){};
+void DumbEngine::showWin(){};
+void DumbEngine::showLose(){};

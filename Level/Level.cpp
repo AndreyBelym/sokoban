@@ -1,0 +1,208 @@
+#include "Level.h"
+#include "LevelObjectFactory.h"
+#include <fstream>
+using namespace std;      
+Level::Level(int rows,int cols){
+    cout<<"Level() constructor!"<<endl;
+    this->rows=0;this->cols=0;
+    setSize(rows,cols);
+}
+Level::~Level(){
+    clear();
+}
+
+void Level::clear(){
+    cout<<"Level::clear()!"<<endl;
+    for(int i=0;i<rows;++i)
+      for(int j=0;j<cols;++j){
+          cout<<"Level::deleteObject("<<i<<","<<j<<")!"<<endl;        
+          deleteObject(i,j);
+          cout<<"Level::deleteObject("<<i<<","<<j<<")!"<<endl;        
+      }
+    fields.clear();
+    rows=0;
+    cols=0;
+    cout<<"Level::clear()!"<<endl;
+}
+
+void Level::setSize(int rows,int cols){
+    cout<<"Level::setSize("<<rows<<","<<cols<<")!"<<endl;
+    clear();
+    cout<<"Level::setSize(int,int)!"<<endl;
+    fields.setSize(rows,cols);
+    this->rows=rows;this->cols=cols;
+    cout<<"Level::setSize("<<rows<<","<<cols<<")!"<<endl;
+}
+void Level::getSize(int &r,int& c){r=rows;c=cols;};
+
+
+bool Level::isValid(int row,int col){
+    return (row>=0&&row<rows&&
+        col>=0&&col<cols);
+}
+
+bool Level::validate(){return true;}
+
+
+LevelObject* Level::getObject(int row,int col){
+    if(!isValid(row,col))
+          return 0;
+    return fields(row,col).object();
+
+}
+
+bool Level::addObject(const std::string& type_name,int row,int col){
+    return attachObject(LevelObjectFactory::create(type_name),row,col);
+}
+
+bool Level::attachObject(LevelObject *obj,int row, int col){
+    if(!isValid(row,col)||
+         !obj)
+          return false;    
+    Field &f=fields(row,col);
+    if(f.attachObject(obj))
+        obj->setLevel(this);
+    return true;
+}
+
+bool Level::moveObject(int row0,int col0,int row,int col){
+  if(!isValid(row,col)||!isValid(row0,col0))
+          return false; 
+  if(!fields(row0,col0).object()||
+         fields(row,col).object())
+     return false; 
+  LevelObject* temp=fields(row0,col0).detachObject();
+  return fields(row,col).attachObject(temp);
+}
+
+bool Level::check(const std::string& type_name){
+  for(int i=0;i<rows;++i)
+      for(int j=0;j<cols;++j){
+          Field &f=fields(i,j);
+          if(f.marked()&&
+             (!f.object()||f.object()->type_name()!=type_name))
+              return false;
+      };
+  return true;
+}
+
+bool Level::setMarked(int row,int col,bool val){
+    if(!isValid(row,col))
+          return false;
+    fields(row,col).setMarked(val);
+    return true;
+}
+bool Level::isMarked(int row,int col){
+    if(!isValid(row,col))
+          return false;
+    return fields(row,col).marked();
+}
+ostream& operator<<(ostream& os,Level& lvl){
+    return lvl.save(os);
+}
+istream& operator>>(istream& is,Level& lvl){
+    return lvl.load(is);
+}
+
+LevelObject* Level::getObject(const std::string& type_name){
+    for(int i=0;i<rows;++i){
+        for(int j=0;j<cols;++j){
+            LevelObject *obj=fields(i,j).object();
+            if(obj&&obj->type_name()==type_name)
+                return obj;
+        }
+    }
+    cout<<"GetObject failed!"<<endl;
+    return 0;
+}
+LevelObject* Level::detachObject(int row, int col){
+    if(!isValid(row,col))
+        return 0;
+    LevelObject *obj=fields(row,col).detachObject();
+    if(obj)
+        obj->setLevel(0);
+    return obj;
+}
+
+void Level::deleteObject(int row, int col){
+    delete detachObject(row,col);
+}
+
+LevelObject* Level::detachObject(LevelObject* obj){
+    cout<<"detaching object"<<endl;
+    if(!(obj&&
+       obj->level()==this&&
+       obj->field()))
+        return 0;
+    int r=obj->field()->row(),
+        c=obj->field()->col();
+    if(obj->field()==&fields(r,c)&&
+       fields(r,c).object()==obj)
+        return detachObject(r,c);
+    cout<<"detachObject failed!"<<endl;
+    return 0;
+}
+
+void Level::deleteObject(LevelObject* obj){
+    delete detachObject(obj);
+}
+
+LevelObject* Level::replaceObject(LevelObject *obj,int row, int col,bool destroy){
+    if (!isValid(row,col))
+        return 0;
+    LevelObject *temp=fields(row,col).replaceObject(obj,false);
+    if(fields(row,col).object()==obj){
+        obj->setLevel(this);
+    }
+    if(temp){
+        temp->setLevel(0);
+        if(destroy){
+            delete temp;
+            temp=0;
+        }
+    }
+    return temp;
+}
+
+LevelObject* Level::replaceObject(const std::string &type_name,int row, int col,bool destroy){
+    return replaceObject(LevelObjectFactory::create(type_name),row,col,destroy);
+}
+void Level::loadLevel(const char* filename){
+    ifstream ifs;
+    ifs.open(filename);
+    ifs>>*this;
+    ifs.close();
+}
+
+void Level::saveLevel(const char* filename){
+    ofstream ofs;
+    ofs.open(filename);
+    ofs<<*this;
+    ofs.close();
+}
+std::ostream& Level::save(std::ostream& os){
+    os<<rows<<" "<<cols<<endl;
+    for(int i=0;i<rows;++i){
+        for(int j=0;j<cols;++j){
+            Field &f=fields(i,j);
+            if(f.object()||f.marked())
+                os<<f;
+        }
+    }
+    return os;
+}
+std::istream& Level::load(std::istream& is){
+    int rows,cols;
+    is>>rows>>cols;
+    setSize(rows,cols);
+    while(!is.eof()){
+        Field f;
+        is>>f;
+        LevelObject *o=f.object();
+        if(o)
+            o->setLevel(this);
+        fields(f.row(),f.col())=f;
+    }
+    return is;
+}
+

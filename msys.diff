@@ -1,0 +1,23 @@
+--- debug_win32.orig.cpp	Sun May 23 19:22:40 2010
++++ debug_win32.cpp	Sun Mar 13 15:40:25 2011
+@@ -73,6 +73,20 @@
+ 
+ void WIN32_Console() {
+ 	AllocConsole();
++
++	// Workaround for avoid immediately exit when launching from Msys
++	// AllocConsole() doesn't initialize standard handles for the console
++	// PDCurses needs standard handles to the console
++	HANDLE hnd = GetStdHandle(STD_INPUT_HANDLE);
++	if (!FlushConsoleInputBuffer(hnd)) {
++		hnd = CreateFile("CONIN$",GENERIC_READ|GENERIC_WRITE,FILE_SHARE_READ|FILE_SHARE_WRITE,NULL,OPEN_EXISTING,0,NULL);
++		SetStdHandle(STD_INPUT_HANDLE,hnd);
++		hnd = CreateFile("CONOUT$",GENERIC_READ|GENERIC_WRITE,FILE_SHARE_READ|FILE_SHARE_WRITE,NULL,OPEN_EXISTING,0,NULL);
++		SetStdHandle(STD_OUTPUT_HANDLE,hnd);
++		hnd = CreateFile("CONOUT$",GENERIC_READ|GENERIC_WRITE,FILE_SHARE_READ|FILE_SHARE_WRITE,NULL,OPEN_EXISTING,0,NULL); 
++		SetStdHandle(STD_ERROR_HANDLE,hnd);
++	}
++
+ 	SetConsoleTitle("DOSBox Debugger");
+ 	ResizeConsole(GetStdHandle(STD_OUTPUT_HANDLE),80,50);
+ }

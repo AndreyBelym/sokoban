@@ -1,0 +1,7 @@
+template <typename T>
+class Array2D: public Array<Array<T>>{
+  private:
+    int size_in;
+  public:
+    Array2D(const int n,const int m):Array(n),size_in(m){
+        for(int i=0;i<

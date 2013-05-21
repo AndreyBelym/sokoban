@@ -1,0 +1,45 @@
+#include "GameLogic.h"
+#include <iostream>
+
+GameLogic::GameLogic():eng_(0),
+                       screen_(0),
+                       running_(true)
+{                       
+};
+
+GameLogic::~GameLogic()
+{
+}
+
+void GameLogic::Main()const{
+    if(!eng_)
+        return;
+    eng_->Init();
+    showScreen();    
+    int res=0;  
+    while(running_&&!res){
+        Keys key=eng_->getKey();
+        std::cout<<"Dispatching event..."<<std::endl;
+        res=screen_->DispatchKey(key); 
+        std::cout<<"Drawing screen..."<<std::endl;
+        showScreen();
+    }
+    eng_->Stop();
+};
+
+void GameLogic::setEngine(GameEngine *e)const{
+    eng_=e;
+}
+
+void GameLogic::showScreen()const{
+    if(eng_&&screen_)
+        eng_->showScreen(screen_);
+}
+
+void GameLogic::setScreen(Screen *s)const{
+    screen_=s;
+    //showScreen();
+}
+void GameLogic::stop()const{
+     running_=false;
+}
